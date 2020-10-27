@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div class="content">
+        
+    </div>
+    <div class="content1"></div>
+    <div class="selectID" id="getELId"></div>
+    <script>
+        let myDiv = document.getElementsByTagName('div')[0];
+        let myDiv1 = document.getElementsByTagName('div')[1];
+        let selectedById = document.getElementById('getELId');
+        myDiv.textContent = '<script>a<//script>'; //izpozvai textContent
+        ///.content emmet for div
+        myDiv1.innerHTML = '<strong>diva<//strong>' //tova e za da ne chete
+        //tagovete bagva sse pri <script>
+        selectedById.textContent = 'Selected by ID'
+        let par = document.createElement('p')
+        par.textContent = 'Append'
+        myDiv.appendChild(par)    
+    </script>
+</body>
+
+</html>
